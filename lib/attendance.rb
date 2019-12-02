@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 class Attendance
-  API_KEY = "41B16367525FAF56D891"
-  # API_KEY = "my_friend_my_friend"
+  API_KEY = "my_friend_my_friend"
   API_URL = "https://api.phish.net/v3/attendance/get?apikey=#{API_KEY}"
 
   attr_reader :profile

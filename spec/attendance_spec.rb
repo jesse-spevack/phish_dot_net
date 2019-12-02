@@ -1,24 +1,24 @@
 require 'spec_helper'
 
 RSpec.describe Attendance do
-  # let(:response) { JSON.parse('{"artistid":1,"name":"Phish","link":"http:\/\/phish.net\/setlists\/phish"}') }
-  # subject { described_class.new(response) }
+  let(:response) { JSON.parse('{"profile":"http://phish.net/user/phan1983","uid":"555","username":"phan1983"}') }
+  subject { described_class.new(response) }
 
   describe '#profile' do
     it 'returns the user profile url' do
-      # expect(subject.name).to eq 'Phish'
+      expect(subject.profile).to eq 'http://phish.net/user/phan1983'
     end
   end
 
   describe '#user_id' do
     it 'returns the user id' do
-      # expect(subject.link).to eq 'http://phish.net/setlists/phish'
+      expect(subject.user_id).to eq '555'
     end
   end
 
   describe '#username' do
     it 'returns the user name' do
-      # expect(subject.id).to eq 1
+      expect(subject.username).to eq 'phan1983'
     end
   end
 
@@ -27,7 +27,7 @@ RSpec.describe Attendance do
       subject { described_class.all }
 
       it 'returns the correct number of attendances' do
-        expect(subject.count).to eq 1
+        expect(subject.count).to eq 6
       end
 
       it 'returns an array of attendances' do
