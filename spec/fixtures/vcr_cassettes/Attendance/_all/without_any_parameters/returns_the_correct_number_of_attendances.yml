@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.phish.net/v3/attendance/get?apikey=my_friend_my_friend
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 02 Dec 2019 19:25:38 GMT
+      Server:
+      - Apache/2.4.18
+      Set-Cookie:
+      - pnet_session=f3bput76h5tsbgnlpfp3j5v704; path=/; domain=.phish.net
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '79'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: "{\"error_code\":0,\"error_message\":null,\"response\":{\"count\":1048,\"data\":[{\"profile\":\"http://phish.net/user/1superaly1\",\"uid\":34705,\"username\":\"1superaly1\"},{\"profile\":\"http://phish.net/user/1winterqueen\",\"uid\":40808,\"username\":\"1winterqueen\"},{\"profile\":\"http://phish.net/user/1_tiny_spark\",\"uid\":13213,\"username\":\"1_tiny_spark\"},{\"profile\":\"http://phish.net/user/3irishbrothers\",\"uid\":6097,\"username\":\"3irishbrothers\"},{\"profile\":\"http://phish.net/user/4_3_98_SetII\",\"uid\":23413,\"username\":\"4_3_98_SetII\"},{\"profile\":\"http://phish.net/user/757phan\",\"uid\":3952,\"username\":\"757phan\"}]}}"
+    http_version:
+  recorded_at: Mon, 02 Dec 2019 19:25:38 GMT
+recorded_with: VCR 5.0.0
