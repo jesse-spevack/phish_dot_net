@@ -1,8 +1,6 @@
-# PhishDotNet
+# Phish_Dot_Net
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/phish_dot_net`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to the `Phish_Dot_Net` gem, an [Phish.Net](https://phishnet.api-docs.io/v3/the-phish-net-api/welcome) API wrapper for folks who love the magic of Ruby and Phish.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
 
 ## Development
 
@@ -33,6 +31,24 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/PlanetEfficacy/phish_dot_net.
+
+## Upcoming Features
+Features to implement include:
+[ ] * Finsihing Attendance testing and implementation
+[ ] * Abstracting common code
+- Implement remaining API methods:
+  * [ ] [Authority](https://phishnet.api-docs.io/v3/authority/authority-get)
+  * [ ] [Blog](https://phishnet.api-docs.io/v3/blog/blog-get)
+  * [ ] [Collections](https://phishnet.api-docs.io/v3/collections/collection-query)
+  * [ ] [Jamcharts](https://phishnet.api-docs.io/v3/jamcharts/jamcharts-all)
+  * [ ] [People](https://phishnet.api-docs.io/v3/people/people-get)
+  * [ ] [Relationships](https://phishnet.api-docs.io/v3/relationships/get-friends-and-fans)
+  * [ ] [Reviews](https://phishnet.api-docs.io/v3/reviews/get-a-review)
+  * [ ] [Setlists](https://phishnet.api-docs.io/v3/setlists/get-the-most-recent-setlist)
+  * [ ] [Shows](https://phishnet.api-docs.io/v3/shows/get-show-links)
+  * [ ] [User]](https://phishnet.api-docs.io/v3/user/get-user-details)
+  * [ ] [Venues](https://phishnet.api-docs.io/v3/venues/get-all-venues)
+
 
 ## License
 
