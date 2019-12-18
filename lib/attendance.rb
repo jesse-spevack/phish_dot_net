@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'faraday'
 
 class Attendance
   API_KEY = "my_friend_my_friend"
