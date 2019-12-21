@@ -18,7 +18,7 @@ class Artist < ApiMethodBase
   attr_reader :id
 
   def initialize(attributes)
-    @name = attributes['name']
+    @name = attributes['name'] # All "Phish"?
     @link = attributes['link']
     @id = attributes['artistid']
   end

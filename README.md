@@ -46,11 +46,7 @@ Features to implement include:
   * [ ] [Reviews](https://phishnet.api-docs.io/v3/reviews/get-a-review)
   * [ ] [Setlists](https://phishnet.api-docs.io/v3/setlists/get-the-most-recent-setlist)
   * [ ] [Shows](https://phishnet.api-docs.io/v3/shows/get-show-links)
-<<<<<<< HEAD
   * [ ] [User](https://phishnet.api-docs.io/v3/user/get-user-details)
-=======
-  * [ ] [User]](https://phishnet.api-docs.io/v3/user/get-user-details)
->>>>>>> master
   * [ ] [Venues](https://phishnet.api-docs.io/v3/venues/get-all-venues)
 
 

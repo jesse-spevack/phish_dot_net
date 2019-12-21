@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'faraday'
 
 class Attendance < ApiMethodBase
   API_PATH = "attendance/get"
