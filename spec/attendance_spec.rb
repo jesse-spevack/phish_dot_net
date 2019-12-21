@@ -34,28 +34,42 @@ RSpec.describe Attendance do
         subject.each { |attendance| expect(attendance).to be_a described_class }
       end
     end
+  end
 
-    context 'with show id parameters' do
-      subject { described_class.all(show_id: 1252691618) }
+  describe '.where', :vcr do
+    context 'with show id' do
+      subject { described_class.where(show_id: 123456) }
 
       it 'returns the correct number of attendances' do
-        # expect(subject.count).to eq 1048
+        expect(subject.count).to eq 2
       end
 
       it 'returns an array of attendances' do
-        # subject.each { |attendance| expect(attendance).to be_a described_class }
+        subject.each { |attendance| expect(attendance).to be_a described_class }
       end
     end
 
-    context 'with show date parameters' do
-      subject { described_class.all(show_date: 1) }
+    context 'with show date' do
+      subject { described_class.where(show_date: '2003-07-30') }
 
       it 'returns the correct number of attendances' do
-        # expect(subject.count).to eq 1048
+        expect(subject.count).to eq 2
       end
 
       it 'returns an array of attendances' do
-        # subject.each { |attendance| expect(attendance).to be_a described_class }
+        subject.each { |attendance| expect(attendance).to be_a described_class }
+      end
+    end
+
+    context 'with show id and date' do
+      subject { described_class.where(show_id: 123456, show_date: '2003-07-30') }
+
+      it 'returns the correct number of attendances for given show id' do
+        expect(subject.count).to eq 2
+      end
+
+      it 'returns an array of attendances for given show id' do
+        subject.each { |attendance| expect(attendance).to be_a described_class }
       end
     end
   end
