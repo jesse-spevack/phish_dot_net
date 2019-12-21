@@ -36,7 +36,7 @@ RSpec.describe Attendance do
     end
 
     context 'with show id parameters' do
-      subject { described_class.all(show_id: 1) }
+      subject { described_class.all(show_id: 1252691618) }
 
       it 'returns the correct number of attendances' do
         # expect(subject.count).to eq 1048
