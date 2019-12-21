@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-class Artist
-  API_KEY = "my_friend_my_friend"
-  API_URL = "https://api.phish.net/v3/artists/all?apikey=#{API_KEY}"
+class Artist < ApiMethodBase
+  API_PATH = 'artists/all'
 
   # The name of the artist.
   # @return [String] the name of the artist, e.g. "Mike Gordan"
@@ -27,7 +26,10 @@ class Artist
   # {https://phishnet.api-docs.io/v3/artists/get-all-artists GET all artists}
   # @return [Array] the list of all artists objects returned from the api
   def self.all
-    response = Faraday.get(API_URL)
-    JSON.parse(response.body)['response']['data'].values.map { |attributes| self.new(attributes) }
+    from_response(JSON.parse(connection.get.body)['response']['data'].values)
+  end
+
+  def self.path
+    API_PATH
   end
 end

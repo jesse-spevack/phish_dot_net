@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.phish.net/v3/attendance/get?apikey=my_friend_my_friend&showdate=2003-07-30&showid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 04:02:49 GMT
+      Server:
+      - Apache/2.4.18
+      Set-Cookie:
+      - pnet_session=6g5gmk97nbgeq7nqe0spdgvoq2; path=/; domain=.phish.net
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '33068'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error_code":0,"error_message":null,"response":{"count":2241,"data":[{"uid":23759,"username":"02_20_2003","profile":"http:\/\/phish.net\/user\/02_20_2003"},{"uid":63963,"username":"12297_Philly_Spectrum","profile":"http:\/\/phish.net\/user\/12297_Philly_Spectrum"}]}}'
+    http_version:
+  recorded_at: Sat, 21 Dec 2019 04:02:49 GMT
+recorded_with: VCR 5.0.0

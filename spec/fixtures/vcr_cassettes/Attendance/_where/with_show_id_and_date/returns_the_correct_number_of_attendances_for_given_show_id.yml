@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.phish.net/v3/attendance/get?apikey=my_friend_my_friend&showdate=2003-07-30&showid=123456
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Dec 2019 04:09:24 GMT
+      Server:
+      - Apache/2.4.18
+      Set-Cookie:
+      - pnet_session=nkfu6h20giifk1111pn1lgfa75; path=/; domain=.phish.net
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '33068'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: "{\"error_code\":0,\"error_message\":null,\"response\":{\"count\":2,\"data\":[{\"profile\":\"http://phish.net/user/1superaly1\",\"uid\":34705,\"username\":\"1superaly1\"},{\"profile\":\"http://phish.net/user/1winterqueen\",\"uid\":40808,\"username\":\"1winterqueen\"}]}}"
+    http_version:
+  recorded_at: Sat, 21 Dec 2019 04:09:25 GMT
+recorded_with: VCR 5.0.0
