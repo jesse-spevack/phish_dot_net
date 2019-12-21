@@ -3,6 +3,7 @@ require 'faraday'
 require 'json'
 
 # I miss the asset pipeline
+require 'api_method_base'
 require 'artist'
 require 'attendance'
 

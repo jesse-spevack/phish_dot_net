@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 class Artist < ApiMethodBase
-  API_KEY = "my_friend_my_friend"
-  API_URL = "https://api.phish.net/v3/artists/all?apikey=#{API_KEY}"
   API_PATH = 'artists/all'
 
   # The name of the artist.
