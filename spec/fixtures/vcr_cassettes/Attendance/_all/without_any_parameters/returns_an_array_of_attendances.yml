@@ -38,7 +38,11 @@ http_interactions:
       - application/json
     body:
       encoding: ASCII-8BIT
+<<<<<<< HEAD
       string: "{\"error_code\":0,\"error_message\":null,\"response\":{\"count\":1048,\"data\":[{\"profile\":\"http://phish.net/user/1superaly1\",\"uid\":34705,\"username\":\"1superaly1\"},{\"profile\":\"http://phish.net/user/1winterqueen\",\"uid\":40808,\"username\":\"1winterqueen\"},{\"profile\":\"http://phish.net/user/1_tiny_spark\",\"uid\":13213,\"username\":\"1_tiny_spark\"},{\"profile\":\"http://phish.net/user/3irishbrothers\",\"uid\":6097,\"username\":\"3irishbrothers\"},{\"profile\":\"http://phish.net/user/4_3_98_SetII\",\"uid\":23413,\"username\":\"4_3_98_SetII\"},{\"profile\":\"http://phish.net/user/757phan\",\"uid\":3952,\"username\":\"757phan\"}]}}"
+=======
+      string: '{"error_code":0,"error_message":null,"response":{"count":0,"data":[]}}'
+>>>>>>> master
     http_version:
   recorded_at: Mon, 02 Dec 2019 19:34:35 GMT
 recorded_with: VCR 5.0.0
