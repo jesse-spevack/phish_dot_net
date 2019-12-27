@@ -20,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
+## Setup Environment Variables
 
+Update the development environment with your [PHISH_DOT_NET_API_KEY](http://api.phish.net/keys/), for example:
+
+```bash
+echo "export PHISH_DOT_NET_API_KEY='YOUR_API_KEY'" > phish_dot_net.env
+echo "phish_dot_net.env" >> .gitignore
+source ./phish_dot_net.env
+```
 
 ## Development
 

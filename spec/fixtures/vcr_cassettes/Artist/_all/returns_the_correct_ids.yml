@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.phish.net/v3/artists/all?apikey=my_friend_my_friend
+    uri: https://api.phish.net/v3/artists/all?apikey=
     body:
       encoding: US-ASCII
       string: ''

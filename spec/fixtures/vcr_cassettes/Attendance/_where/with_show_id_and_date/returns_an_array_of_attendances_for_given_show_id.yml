@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.phish.net/v3/attendance/get?apikey=my_friend_my_friend&showdate=2003-07-30&showid=123456
+    uri: https://api.phish.net/v3/attendance/get?apikey=&showdate=2003-07-30&showid=123456
     body:
       encoding: US-ASCII
       string: ''
